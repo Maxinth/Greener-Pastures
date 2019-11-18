@@ -5,39 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RegEx validation</title>
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>New User Signup</h1>
+    <h1>Greener Pastures</h1>
+    <!-- wrapper to center -->
+    <div class="wrapper">
+      <!-- for-flex -->
+      <div class="container">
+        <div class="item  one">
+          <h1>Simple form validation using RegEx</h1>
+          <div class="content">
+            <h2>
+              You will need to trust me with this one. Its simple and it kinda
+              needs you to follow every instruction to the letter to proceed
+            </h2>
+            <h3>
+              When
+              <span style="color: green; font-size:25px;"
+                >"ALL fields go GREEN"</span
+              >
+              this is an indication to move on to greener pastures. (smiles)
+            </h3>
+          </div>
+          <button class="init">Continue</button>
+        </div>
+        <!-- second flex item -->
+        <div class="item two">
+          <form>
+            <input type="text" name="username" placeholder="Username" />
+            <p>Username must be alphanumeric and contain 5-12 characters</p>
 
-    <div class="container"></div>
-    <form>
-      <input type="text" name="username" placeholder="Username" />
-      <p>Username must be alphanumeric and contain 5-12 characters</p>
+            <input type="text" name="email" placeholder="email" />
+            <p>Email must be a valid address, e.g me@mydomain.com</p>
 
-      <input type="text" name="email" placeholder="email" />
-      <p>Email must be a valid address, e.g me@mydomain.com</p>
+            <input type="password" name="password" placeholder="password" />
+            <p>
+              Password must be alphanumeric (@, _ and - are also allowed) and
+              must be 8-20 characters long
+            </p>
 
-      <input type="password" name="password" placeholder="password" />
-      <p>
-        Password must be alphanumeric (@, _ and - are also allowed) and must be
-        8-20 characters long
-      </p>
+            <input type="text" name="telephone" placeholder="telephone" />
+            <p>
+              Telephone number must be a valid Nigerian number <br />(starting
+              with +234...)
+            </p>
 
-      <input type="text" name="telephone" placeholder="telephone" />
-      <p>
-        Telephone number must be a valid Nigerian number <br />(starting with
-        +234...)
-      </p>
+            <input type="text" name="slug" placeholder="profile-slug" />
+            <p>
+              Slug must contain only lowercase letters, numbers and hyphens and
+              be 8-20 characters long
+            </p>
 
-      <input type="text" name="slug" placeholder="profile-slug" />
-      <p>
-        Slug must contain only lowercase letters, numbers and hyphens and be
-        8-20 characters long
-      </p>
+            <button class="hide">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-      <button>Submit</button>
-    </form>
     <script src="js/validation.js" type="text/javascript"></script>
   </body>
 </html>

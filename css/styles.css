@@ -1,6 +1,7 @@
 body {
   font-family: arial;
   color: #333;
+  font-family: Garamond;
 }
 h1 {
   font-weight: normal;
@@ -21,6 +22,7 @@ input {
   border-radius: 10px;
   border: 3px solid #ccc;
   outline: none !important;
+  text-align: center;
 }
 
 input.valid {
@@ -57,12 +59,14 @@ button {
   border: 1px solid #b0e0b0;
   border-radius: 10px;
   outline: none;
-  background-color: #b0e0b0;
-  color: black;
+  background-color: skyblue;
+  color: #3d023d;
   font-size: 20px;
-  display: none;
 }
 
+button.hide {
+  display: none;
+}
 button:hover {
   color: white;
   background-color: green;
@@ -86,3 +90,70 @@ button.hide {
   height: 0;
   opacity: 0;
 } */
+
+.container {
+  display: flex;
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+.two {
+  flex-basis: 500px;
+  /* flex-grow: 4; */
+}
+
+.one {
+  flex-basis: 500px;
+  padding: 50px;
+  padding-top: 0px;
+}
+
+form {
+  display: none;
+}
+
+.one h1 {
+  font-weight: bolder;
+  color: whitesmoke;
+  background-color: #664704;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+button.init {
+  margin-top: 10px;
+  float: left;
+}
+
+body > h1 {
+  background-color: rgb(5, 151, 5);
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.message {
+  margin-top: 50px;
+  background-color: #b0e0b0;
+  color: #54485f;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 40px;
+}
+
+div.content h3 {
+  margin-top: 70px;
+}
+
+div.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background: ghostwhite;
+}
+
+.item {
+  flex-grow: 1;
+}
